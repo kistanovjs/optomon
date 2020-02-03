@@ -1,0 +1,141 @@
+.smpo-architecture
+  border-bottom 1px solid mercury
+  .container
+    position relative
+    border-left 1px solid mercury
+    border-right 1px solid mercury
+  .inner-section__title
+    padding 50px 40px 0
+    @media (max-width breakpoint)
+      padding 40px 20px 0
+
+.smpo-architecture__links
+  position absolute
+  right 100%
+  width 100%
+  max-width 350px
+  @media (max-width breakpoint-xl)
+    max-width 240px
+  @media (max-width breakpoint-lg)
+    display none
+
+.smpo-architecture__block
+  &+&
+    margin-top 40px
+
+.smpo-architecture__slider
+  position relative
+
+.smpo-architecture__slide
+  position relative
+  height 600px
+  @media (max-width breakpoint-md)
+    height auto
+    padding-bottom 100px
+  @media (max-width breakpoint-sm)
+    padding-bottom 60px
+
+.smpo-architecture__slider-arrows
+  position absolute
+  right 45px
+  bottom 250px
+  display flex
+  @media (max-width breakpoint-md)
+    bottom 10px
+
+
+.smpo-architecture__slider-arrow
+  width 130px
+  height 110px
+  border 1px solid mercury
+  background-color accent-color
+  display flex
+  align-items center
+  justify-content center
+  cursor pointer
+  transition all .2s
+  &:hover
+    opacity 0.8
+  &.prev
+    svg
+      transform rotate(180deg)
+  &.disable
+    border 1px solid mercury
+    background-color #fff
+    cursor default
+    svg
+      fill mercury
+  svg
+    width 70px
+    height 50px
+    fill white
+  &+&
+    margin-left 30px
+  @media (max-width breakpoint-lg)
+    width 90px
+    height 70px
+    svg
+      width 50px
+      height 30px
+    &+&
+      margin-left 10px
+  @media (max-width breakpoint-sm)
+    width 70px
+    height 50px
+    svg
+      width 30px
+      height 30px
+
+.smpo-architecture__slide-img
+  position absolute
+  top 0
+  z-index -1
+  @media (max-width breakpoint-md)
+    position static
+
+.smpo-architecture__slide-info
+  width 100%
+  max-width 400px
+  font-size 16px
+  margin-left auto
+  @media (max-width breakpoint-sm)
+    max-width 100%
+    margin-bottom 20px
+    padding 0 20px
+
+.smpo-architecture__slide-num
+  font-size 34px
+  font-weight 500
+  line-height 36px
+  letter-spacing 0.34px
+  display block
+  margin-bottom 20px
+
+.smpo-architecture__slide-title
+  font-weight 500
+  margin-bottom 15px
+
+.smpo-architecture__slide-subinfo
+  position absolute
+  bottom 30px
+  left 50px
+  padding-left 75px
+  border-bottom 1px solid #000
+  max-width 360px
+  padding-bottom 10px
+  @media (max-width breakpoint-md)
+    padding-left 10px
+    max-width 200px
+    left 20px
+    bottom 20px
+  @media (max-width breakpoint-sm)
+    bottom 70px
+
+.smpo-architecture__slide-subinfo-km
+  font-size 34px
+  font-weight 500
+  line-height 36px
+  letter-spacing 0.34px
+  display block
+  margin-top 20px
+  padding-left 60px

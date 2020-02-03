@@ -1,0 +1,10 @@
+section.inner-hero
+  .container
+    .inner-hero__breadcrumbs.breadcrumbs
+      each link in press.hero.breadcrumbs
+        a.breadcrumbs__link(href="#")= link
+    h1.inner-hero__title= press.hero.title
+    .inner-hero__row.padding
+      .inner-hero__block
+        each item in press.hero.sector
+          a.inner-hero__link.contact-link(href=item["link"])= item.text

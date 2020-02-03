@@ -1,0 +1,100 @@
+
+
+.article__item
+    position relative
+    display flex
+    flex-direction: column
+    align-items: center
+    &:last-child
+        .article__gap
+            border-bottom: 1px solid #e8e8e8;
+
+.article__item-content
+    max-width 960px
+    border-left 1px solid #e8e8e8
+    border-right 1px solid #e8e8e8
+    @media(max-width breakpoint)
+        max-width: 740px
+    @media(max-width breakpoint-md)
+        max-width: 450px
+    @media(max-width breakpoint-sm)
+        max-width 300px
+.article__data,.article__type
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: 0.14px;
+
+.article__inf
+    display flex
+    padding 25px 0 50px
+    padding-left 42px;
+    @media(max-width breakpoint-md)
+        padding 15px 0 35px 20px
+
+.article__data
+    position relative
+    margin-right 70px
+    &:after
+        content: "/"
+        position absolute
+        right -20px
+        top -2px
+        font-size: 16px
+    @media(max-width breakpoint-md)
+        margin-right 40px
+        
+.article__title
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 1.06;
+    letter-spacing: 0.34px;
+    padding-left 42px
+    padding-right 42px
+    padding-bottom 30px
+    @media(max-width breakpoint-md)
+        font-size: 34px
+        padding-left 20px
+        padding-right 20px
+        padding-bottom 20px
+    @media(max-width breakpoint-sm)
+        font-size: 26px
+.article__img-wrp
+    width: 100%
+    img 
+        width 100%
+
+.article__desc
+    font-size: 18px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;    
+    padding: 28px 42px 22px
+    @media(max-width breakpoint-md)
+        padding 20px 20px 15px
+    @media(max-width breakpoint-sm)
+        font-size: 16px
+.article__button
+    margin-left 42px
+    margin-bottom 95px
+    @media(max-width breakpoint-md)
+        margin-left 20px
+        margin-bottom 75px
+    @media(max-width breakpoint-sm)
+        margin-bottom 60px
+
+.article__gap
+    position absolute
+    bottom 0
+    left 0
+    width 100%
+    height 53px
+    border-top: 1px solid #e8e8e8;
+    border-bottom: 0px solid #e8e8e8;    
+    &.top
+        top 0
+        border-bottom 1px solid #e8e8e8
+    @media(max-width breakpoint-md)
+        height 40px

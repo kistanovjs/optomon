@@ -1,0 +1,10 @@
+extends ../layout/main
+
+block variables
+	- var title = 'Контактная информация'
+	- var isContact = true
+block content
+	.contact-page
+		include ../section/contact/hero
+		include ../section/contact/gap
+		include ../section/contact/contact

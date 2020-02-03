@@ -1,0 +1,115 @@
+.systems
+  background url(../img/content/index/systems-bg.jpg) center no-repeat
+  background-size cover
+  display flex
+  @media (max-width breakpoint)
+    display block
+    padding 20px 0
+
+.systems__title
+  flex none
+  width 25%
+  font-size 48px
+  font-weight 500
+  letter-spacing 0.48px
+  padding-top 200px
+  padding-left 80px
+  border 1px solid alto
+  @media (max-width breakpoint-lg)
+    padding-left 40px
+    padding-top 150px
+    font-size 38px
+  @media (max-width breakpoint)
+    width 100%
+    border none
+    padding-top 0
+    margin-bottom 20px
+  @media (max-width breakpoint-md)
+    padding-left 20px
+
+.systems__content
+  padding 110px 0
+  @media (max-width breakpoint-lg)
+    padding 40px 0  
+  @media (max-width breakpoint)
+    padding 0
+
+.systems__item
+  display flex
+  border-top 1px solid alto
+  &+&
+    border-bottom 1px solid alto
+  @media (max-width breakpoint-md)
+    border none 
+    display block
+    &+&
+      border none
+      margin-top 30px
+
+.systems__col
+  width 50%
+  padding 40px 80px
+  &+&
+    border-left 1px solid alto
+  @media (max-width breakpoint-lg)
+    padding 20px 40px
+  @media (max-width breakpoint-md)
+    padding 0 20px
+    width 100%
+    &+&
+      margin-top 15px
+
+.systems__icon
+  margin-bottom 25px
+  svg
+    width 145px
+    height 100px
+
+.systems__item-title
+  font-size 34px
+  font-weight 500
+  line-height 36px
+  letter-spacing 0.34px
+  margin-bottom 10px
+  display block
+  &:hover
+    text-decoration underline
+
+.systems__text
+  max-width 325px
+  color base-color
+
+.systems__subtitle
+  font-size 14px
+  font-weight 500
+  text-transform uppercase
+  letter-spacing 0.16px
+  margin-top 50px
+  margin-bottom 40px
+  @media (max-width breakpoint-md)
+    margin-top 0
+    margin-bottom 20px
+
+.systems__levels
+  display flex
+  justify-content space-between
+
+.systems__level
+  font-size 14px
+  display flex
+  flex-direction column
+  letter-spacing 0.14px
+
+.systems__level-title
+  font-weight 500
+  margin-bottom 25px
+
+.systems__level-link
+  display block
+  align-self flex-start
+  font-weight 300
+  transition all .2s
+  &:hover
+    text-decoration underline
+  &+&
+    margin-top 15px

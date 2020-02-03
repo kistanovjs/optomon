@@ -1,0 +1,26 @@
+.contact-block
+  display flex
+  flex-direction column
+
+.contact-block__address
+  color base-color
+  margin-bottom 30px
+
+.contact-block__link
+  display inline-flex
+  align-items center
+  color base-color
+  transition all .2s
+  cursor pointer
+  &+&
+    margin-top 25px
+  svg
+    width 20px
+    height 20px
+    fill base-color
+    margin-right 10px
+    transition all .2s
+  &:hover
+    color #000
+    svg
+      fill #000

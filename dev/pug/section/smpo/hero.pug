@@ -1,0 +1,22 @@
+section.inner-hero
+  .container
+    .inner-hero__breadcrumbs.breadcrumbs
+      each link in smpo.hero.breadcrumbs
+        a.breadcrumbs__link(href="#")= link
+    h1.inner-hero__title= smpo.hero.title
+    .inner-hero__row
+      .inner-hero__block
+        h4.inner-hero__subtitle= smpo.hero.about.title
+        each item in smpo.hero.about.links
+          a.inner-hero__link.js-scroll-to(href=item["link"])= item.text
+      .inner-hero__block
+        h4.inner-hero__subtitle= smpo.hero.projects.title
+        each item in smpo.hero.projects.links
+          a.inner-hero__link(href="#")= item
+      .inner-hero__block
+        a.inner-hero__link.inner-hero__link--with-icon(href=smpo.hero.docs.link download)
+          +icon(smpo.hero.docs.icon)
+          span= smpo.hero.docs.text
+        a.inner-hero__link.inner-hero__link--with-icon(href=smpo.hero.video.link target="_blank")
+          +icon(smpo.hero.video.icon)
+          span= smpo.hero.video.text

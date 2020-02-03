@@ -1,0 +1,16 @@
+section.article
+    .article-wrp
+        .article__list
+            each item in press.article.list
+                .article__item
+                    .article__gap.top
+                    .article__item-content
+                        .article__inf
+                            .article__data= item.data
+                            .article__type= item.type
+                        h2.article__title= item.title
+                        .article__img-wrp
+                            img.article__img(src=item["src"], alt=item["alt"])
+                        .article__desc= item.desc
+                        button.article__button.btn= item.button
+                    .article__gap

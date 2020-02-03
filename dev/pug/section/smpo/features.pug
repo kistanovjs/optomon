@@ -1,0 +1,9 @@
+section.smpo-features.inner-section(id=smpo.features.id)
+  .container
+    .inner-section__wrap
+      h3.inner-section__title.smpo-features__title= smpo.features.title
+      .smpo-features__list.inner-section__list
+        each item in smpo.features.list
+          .smpo-features__item.inner-section__item
+            +icon(item["icon"])
+            span.text= item.text

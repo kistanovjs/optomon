@@ -1,0 +1,13 @@
+section.smpo-about.inner-section
+  .container
+    .inner-section__wrap
+      .smpo-about__head
+        .smpo-about__info
+          h3.inner-section__title.smpo-about__title= smpo.about.title
+          p.text= smpo.about.text
+        +icon(smpo.about.icon)
+      .smpo-about__list.inner-section__list
+        each item in smpo.about.list
+          .smpo-about__item.inner-section__item
+            +icon(item["icon"])
+            span.text= item.text

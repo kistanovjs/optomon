@@ -1,0 +1,10 @@
+form.form(action=global.footer.form.action method="POST" data-validation)
+  h5.form__title= global.footer.form.title
+  each item in global.footer.form.fields
+    .form__group
+      input.form__input(id=item["id"] name=item["name"] data-name=item["data"] typ="text")
+      label.form__label(for=item["id"])= item["label"]
+  .form__group
+    textarea.form__textarea(name=global.footer.form.message.name placeholder=global.footer.form.message.placeholder)
+  .form__actions
+    button.btn(type="submit")= global.footer.form.button

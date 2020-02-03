@@ -1,0 +1,19 @@
+footer.footer.footer--index(class= isPress ? "footer-press" : "")
+  .footer__logo
+    +icon(global.logo.icon)
+  .footer__content
+    .footer__col
+      .footer__about
+        h4.footer__about-title= global.footer.about.title
+        .footer__about-content
+          each item in global.footer.about.texts
+            p.text.footer__about-text= item
+      include ../modules/copyright
+    .footer__col.footer__col--row
+      .footer__contacts
+        h5.footer__contacts-title= global.footer.contacts.title
+        include ../modules/contact-block
+        .footer__contacts-policy
+          include ../modules/policy
+      .footer__form
+        include ../modules/contact-form

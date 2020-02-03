@@ -1,0 +1,18 @@
+section.systems
+  h2.systems__title= index.systems.title
+  .systems__content
+    each item in index.systems.list
+      .systems__item
+        .systems__col
+          .systems__icon
+            +icon(item["icon"])
+          a.systems__item-title(href="#")= item["title"]
+          p.text.systems__text= item["text"]
+        .systems__col
+          h5.systems__subtitle= item["subtitle"]
+          .systems__levels
+            each level in index.systems.level
+              .systems__level
+                h6.systems__level-title= level["title"]
+                each link in level["list"]
+                  a.systems__level-link(href="#")= link

@@ -2,11 +2,11 @@
   "header": [
     {
       "text": "ГЛАВНАЯ",
-      "link": "/"
+      "link": "/optomon/build/index.html"
     },
     {
       "text": "СИСТЕМЫ МОНИТОРИНГА",
-      "link": "/smpo.html"
+      "link": "/optomon/build/smpo.html"
     },
     {
       "text": "НАУЧНЫЕ ИССЛЕДОВАНИЯ",
@@ -18,11 +18,11 @@
     },
     {
       "text": "ПРЕСС-ЦЕНТР",
-      "link": "/press.html"
+      "link": "/optomon/build/press.html"
     },
     {
       "text": "КОНТАКТНАЯ ИНФОРМАЦИЯ",
-      "link": "/contact.html"
+      "link": "/optomon/build/contact.html"
     }
   ],
   "menuBlock": {

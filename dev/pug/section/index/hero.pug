@@ -1,0 +1,16 @@
+section.hero.js-index
+  .hero__background.css-background-animate
+    img(src=index.hero.bg alt=index.hero.title)
+  .hero__content
+    span.hero__date= index.hero.date
+    h1.hero__title= index.hero.title
+    a.btn(href="#")= index.hero.link
+  .hero__news.hero__news--opacity
+    each item in index.hero.news
+      a.hero__news-block.hero-news(href="#")
+        .hero-news__content
+          p.hero-news__info
+            span.hero-news__date= item["date"]
+            span.hero-news__tag= item["tag"]
+          h3.hero-news__title= item["title"]
+          p.hero-news__text= item["text"]

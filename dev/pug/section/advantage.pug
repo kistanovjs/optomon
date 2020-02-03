@@ -1,0 +1,7 @@
+section.advantage
+  each item in global.advantage
+    a.advantage__block(href="#")
+      span.advantage__tag= item["tag"]
+      h4.advantage__title= item["title"]
+      each text in item["texts"]
+        p.text.advantage__text= text

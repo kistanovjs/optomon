@@ -1,0 +1,54 @@
+// ОБЩИЕ СТИЛИ
+
+.wrapper 
+	width 100%
+	max-width 1920px
+	margin 0 auto
+
+.container
+	width 100%
+	max-width 960px
+	margin 0 auto
+
+.overflow-hidden
+	overflow hidden
+
+.text
+	font-size 16px
+	line-height 18px
+	font-weight 300
+	letter-spacing 0.14px
+
+.css-background-animate
+	animation 14s linear backgroundAnimate forwards 
+
+@keyframes backgroundAnimate {
+  0% {
+    transform: scale(1.5);
+	}
+	100% {
+    transform: scale(1);
+	}
+}
+
+.mopads
+	@media (min-width 481px) and (max-width breakpoint-md)
+		display none !important
+
+.nomobiles
+	@media (max-width breakpoint-sm)
+		display none !important
+
+// футер к низу
+
+body 
+	display flex
+	flex-direction column
+
+.main 
+	flex 1
+	&--inner
+		padding-top 90px
+	@media (max-width breakpoint-lg)
+		&--inner
+			padding-top 70px

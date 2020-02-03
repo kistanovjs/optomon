@@ -1,0 +1,267 @@
+.menu-block
+  position relative
+  color black
+  overflow-y scroll
+  max-height 100%
+  background url(../img/content/index/systems-bg.jpg) center no-repeat
+  background-size cover
+  height 100%
+  .header-text
+    color black
+  @media (max-width breakpoint-md)
+    background none
+    background-color #fff
+
+.menu-block__content
+  display flex
+  @media (max-width breakpoint-md)
+    display: -webkit-box;
+    flex-direction column
+    height 100%
+    padding-top 100px
+
+.menu-block__col
+  width 25%
+  padding 150px 20px 0 30px
+  display flex
+  flex-direction column
+  &+&
+    border-left 1px solid mercury
+  &:first-child
+    padding 0
+    padding-bottom 20px
+  &:nth-child(even)
+    background-color #fff
+  &--nda
+    z-index 0
+    position relative
+    &:before
+      content ''
+      display block
+      width 100%
+      background-color #fff
+      position absolute
+      top 440px
+      bottom 0
+      left 0
+      z-index -1
+  @media (max-width breakpoint-lg)
+    padding 100px 15px
+    &--nda
+      &:before
+        top 340px
+  @media (max-width breakpoint)
+    &--nda
+      &:before
+        top 300px
+    &:first-child
+      display none
+  @media (max-width breakpoint-md)
+    padding 0 20px
+    width 100%
+    &+&
+      border-left none
+      margin-top 20px
+    &:first-child
+      margin-top 20px
+      display block
+      order 5
+      .menu-block__logo
+        display none
+      .menu-block__col-wrapper
+        padding 0 20px
+    &--nda
+      position static
+      &:before
+        display none
+
+.menu-block__col-wrapper
+  padding 0 30px
+  @media (max-width breakpoint-lg)
+    padding 0 15px
+
+.menu-block__col-content
+  @media (max-width breakpoint-md)
+    padding-left 10px
+
+.menu-block__col-title
+  font-size 14px
+  font-weight 500
+  letter-spacing 0.14px
+  text-transform uppercase
+  margin-bottom 60px
+  &--not-transform
+    text-transform none
+  @media (max-width breakpoint)
+    margin-bottom 30px
+  @media (max-width breakpoint-md)
+    font-size 20px
+    margin-bottom 0
+    cursor pointer
+    display flex
+    align-items center
+    margin-bottom 10px
+    &:after
+      // content ''
+      display block
+      width 8px
+      height 8px
+      margin-left 6px
+      border-left 1px solid gray
+      border-top 1px solid gray
+      transform rotate(45deg) 
+
+.menu-block__col-text
+  display block
+  margin-bottom 50px
+  color base-color
+  @media (max-width breakpoint-sm)
+    margin-bottom 20px
+  @media (max-width breakpoint-md)
+    display none
+
+.menu-block__col-link
+  display block
+  font-weight 500
+  align-self flex-start
+  padding 10px
+  margin-left -10px
+  &:hover
+    text-decoration underline
+  @media (max-width breakpoint-md)
+    font-size 16px
+    font-weight normal
+
+.menu-block__col-nda
+  margin-top 120px
+  @media (max-width breakpoint-lg)
+    margin-top 50px
+  @media (max-width breakpoint-md)
+    margin-top 10px
+
+.menu-block__logo
+  background-color accent-color
+  display flex
+  align-items center
+  justify-content center
+  height 90px
+  margin-bottom 60px
+  flex none
+  svg
+    width 177px
+    height 45px
+    fill white
+  @media (max-width breakpoint-lg)
+    height 70px
+    margin-bottom 30px
+    svg
+      width 150px
+      height 35px
+  @media (max-width breakpoint)
+    margin-bottom 0
+
+.menu-block__contact-form
+  margin-top 30px
+  .form
+    margin-bottom 20px
+
+.menu-block__copyright
+  margin-top 40px
+
+.menu-block__systems-item
+  display block
+  &+&
+    margin-top 90px
+  .systems__icon
+    margin-bottom 20px
+      svg
+        width 90px
+        height 60px
+  .systems__item-title
+    font-size 14px
+    line-height 16px
+    margin-bottom 15px
+    max-width 220px
+  @media (max-width breakpoint-lg)
+    &+&
+      margin-top 40px
+  @media (max-width breakpoint-md)
+    &+&
+      margin-top 20px
+    .systems__icon,
+    .systems__text
+      display none
+    .systems__item-title
+      max-width 100%
+      font-weight normal
+
+.menu-block__action
+  position absolute
+  right 85px
+  top 0
+  height 90px
+  display flex
+  align-items center
+  @media (max-width breakpoint-lg)
+    height 70px
+    right 20px
+
+.menu-block__close
+  display flex
+  align-items center
+  cursor pointer
+  width 85px
+  svg
+    margin-right 13px
+    fill black
+    width 32px
+    height 32px
+    flex none
+  @media (max-width breakpoint-sm)
+    width 32px
+    span
+      display none
+    svg
+      margin-right 0
+
+.menu-block__info
+  position absolute
+  right 0
+  top 600px
+  width 100%
+  max-width 1050px
+  padding-left 240px
+  @media (max-width breakpoint-lg)
+    top 650px
+    max-width 700px
+    padding-left 150px
+  @media (max-width breakpoint)
+    display none
+
+.menu-block__info-img
+  position absolute
+  top 0
+  left 0
+
+.menu-block__info-title
+  max-width 430px
+  color accent-color
+  font-size 34px
+  font-weight 500
+  line-height 36px
+  letter-spacing 0.34px
+  margin-bottom 10px
+
+.menu-block__info-text
+  max-width 405px
+
+.menu-block__mobile-logo
+  position absolute
+  top 0
+  left 0
+  display none
+  width 25%
+  margin-bottom 0
+  min-width 190px
+  @media (max-width breakpoint)
+    display flex

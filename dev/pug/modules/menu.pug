@@ -1,0 +1,9 @@
+.menu
+  nav.menu__list
+    each item in nav.header
+      a.menu__item(href=item["link"])= item["text"]
+  .menu__open
+    +icon('menu')
+    span.header-text Меню
+  .menu__block
+    include ./menu-block

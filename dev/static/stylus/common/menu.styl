@@ -1,0 +1,60 @@
+.menu
+  display flex
+  align-items center
+
+.menu__list
+  margin-right 60px
+  @media (max-width breakpoint-lg)
+    margin-right 20px
+  @media (max-width breakpoint)
+    display none
+
+.menu__item
+  color white
+  font-size 14px
+  letter-spacing 0.14px
+  &+&
+    margin-left 60px
+  &:hover
+    text-decoration underline
+  @media (max-width breakpoint-xl)
+    &+&
+      margin-left 30px
+  @media (max-width breakpoint-lg)
+    &+&
+      margin-left 15px
+
+
+.menu__open
+  display flex
+  align-items center
+  cursor pointer
+  width 85px
+  svg
+    margin-right 13px
+    fill white
+    width 32px
+    height 32px
+  @media (max-width breakpoint-sm)
+    width 32px
+    span
+      display none
+    svg
+      margin-right 0
+
+.menu__block
+  position fixed
+  top 0
+  left 0
+  right 0
+  bottom 0
+  z-index 1000
+  background #fff
+  transform translateY(-50px)
+  opacity 0
+  visibility hidden
+  transition all .4s
+  &.menu__block--active
+    transform translateY(0)
+    opacity 1
+    visibility visible

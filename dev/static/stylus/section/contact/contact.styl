@@ -1,0 +1,111 @@
+.contact
+    background-color: #4c5155
+    flex: auto
+    display flex
+    flex-direction: column
+    & .container
+        border-left: 1px solid #e8e8e8;
+        border-right: 1px solid #e8e8e8;
+.contact__stub
+    flex: auto
+    & .container
+        height: 100%;
+.contact__content
+    padding-top 50px
+    border-bottom: 1px solid #e8e8e8
+    display flex
+    justify-content space-between
+    @media(max-width breakpoint-md)
+        padding-top 30px
+    @media(max-width breakpoint-sm)
+        flex-direction: column
+        padding-top 15px
+
+
+.contact__title
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 2.25;
+    color #fff
+    margin-bottom 28px
+    @media(max-width breakpoint-md)
+        margin-bottom 15px
+    @media(max-width breakpoint-sm)
+        margin-bottom: 10px
+        font-size: 18px
+
+.contact__information
+    padding-left 50px
+    & .contact-block.full
+        & .text span 
+            font-size: 16px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.2;
+            color #fff
+            @media(max-width breakpoint-md)
+                font-size: 14px
+
+        & .text .icon
+            fill: #fff
+            width 30px
+            height 30px
+            @media(max-width breakpoint-md)
+                width 25px
+                height 25px
+            &.icon-map
+                align-self flex-start
+    @media(max-width breakpoint-md)
+        padding-left 30px
+    @media(max-width breakpoint-sm)
+        padding-left: 25px
+.contact-block__link-wrp
+    display flex
+    flex-direction: column
+    align-items: flex-start
+    & span 
+        margin-bottom 25px
+        @media(max-width breakpoint-md)
+            margin-bottom 15px
+        @media(max-width breakpoint-sm)
+            margin-bottom 10px
+.contact__form
+    
+    & .form__title
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        line-height: 2.25;
+        color #fff
+        @media(max-width breakpoint-sm)
+            font-size: 18px
+    & .form 
+        width 310px
+        margin-right 153px
+        @media(max-width breakpoint)
+            margin-right 70px
+        @media(max-width breakpoint-md)
+            width 250px
+            margin-right 50px
+        @media(max-width 600px)
+            margin-right 30px
+            width 240px
+        @media(max-width breakpoint-sm)
+            width 100%
+    @media(max-width breakpoint-sm)
+        margin-left 25px
+        margin-top 20px
+        margin-right 25px
+
+    & .policy
+        margin-bottom 53px
+        margin-top 20px
+        max-width: 215px
+        color #fff
+        @media(max-width breakpoint-md)
+            margin-bottom 35px
+            font-size: 14px
+        @media(max-width breakpoint-sm)
+            margin-top 10px

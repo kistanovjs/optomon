@@ -1,0 +1,54 @@
+.menu-block
+  .menu-block__content
+    .menu-block__col
+      .menu-block__logo
+        +icon(global.logo.icon)
+      .menu-block__col-wrapper
+        h4.menu-block__col-title.menu-block__col-title--not-transform.js-menu-contact= global.coopName
+        .menu-block__col-content
+          .menu-block__contact-block
+            include ./contact-block
+          .menu-block__contact-form
+            include ./contact-form
+            include ./policy
+          .menu-block__copyright
+            include ./copyright
+    .menu-block__col
+      h4.menu-block__col-title= index.systems.title
+      .menu-block__col-content.menu-block__systems
+        each item in index.systems.list
+          .menu-block__systems-item
+            .systems__icon
+              +icon(item["icon"])
+            a.systems__item-title(href="#")= item["title"]
+            p.text.systems__text= item["text"]
+    .menu-block__col
+      h4.menu-block__col-title= nav.menuBlock.sience.title
+      .menu-block__col-content
+        p.text.menu-block__col-text= nav.menuBlock.sience.text
+        each item in nav.menuBlock.sience.list
+          a.text.menu-block__col-link(href=item["link"])= item["text"]
+    .menu-block__col
+      h4.menu-block__col-title= nav.menuBlock.about.title
+      .menu-block__col-content
+        p.text.menu-block__col-text= nav.menuBlock.about.text
+        each item in nav.menuBlock.about.list
+          a.text.menu-block__col-link(href=item["link"])= item["text"]
+    .menu-block__col.menu-block__col--nda
+      h4.menu-block__col-title= nav.menuBlock.pressCenter.title
+      .menu-block__col-content
+        each item in nav.menuBlock.pressCenter.list
+          a.text.menu-block__col-link(href=item["link"])= item["text"]
+        .menu-block__col-nda
+          a.text.menu-block__col-link(href="#")= nav.menuBlock.nda
+  .menu-block__action
+    .menu-block__close
+      +icon('menu-close')
+      span.header-text Закрыть
+    span.header__switch.header-text Eng
+  .menu-block__info
+    img.menu-block__info-img(src=nav.menuBlock.info.img alt=nav.menuBlock.info.title)
+    h3.menu-block__info-title= nav.menuBlock.info.title
+    p.text.menu-block__info-text= nav.menuBlock.info.text
+  .menu-block__mobile-logo.menu-block__logo
+    +icon(global.logo.icon)

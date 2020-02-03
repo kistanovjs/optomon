@@ -1,0 +1,11 @@
+section.smpo-event.inner-section(id=smpo.event.id)
+  .container
+    .inner-section__wrap
+      h3.inner-section__title.smpo-event__title= smpo.event.title
+      each text in smpo.event.texts
+        p.text.inner-section__text= text
+      .smpo-event__list.inner-section__list
+        each item in smpo.event.list
+          .smpo-event__item.inner-section__item
+            +icon(item["icon"])
+            span.text= item.text

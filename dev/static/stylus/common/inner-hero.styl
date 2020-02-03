@@ -1,0 +1,75 @@
+.inner-hero
+  background-color accent-color
+  color white
+  padding 40px 0 120px
+  @media (max-width breakpoint)
+    padding 40px 20px
+
+.inner-hero__breadcrumbs
+  margin-bottom 20px
+
+.inner-hero__title
+  font-size 48px
+  font-weight 500
+  line-height 48px
+  letter-spacing 0.48px
+  max-width 850px
+  margin-bottom 60px
+  margin-top 0
+  @media (max-width breakpoint-md)
+    margin-bottom 20px
+    font-size 34px
+    line-height 36px
+
+.inner-hero__row
+  display flex
+  @media (max-width breakpoint-md)
+    flex-wrap wrap
+
+.inner-hero__block
+  display flex
+  flex-direction column
+  font-size 16px
+  letter-spacing 0.16px
+  max-width 320px
+  &+&
+    margin-left 50px
+  @media (max-width breakpoint-md)
+    width 100%
+    max-width 50%
+    margin-bottom 20px
+    &+&
+      margin-left 0
+  @media (max-width breakpoint-sm)
+    max-width 100%
+
+.inner-hero__subtitle
+  margin-bottom 20px
+  font-weight bold
+
+.inner-hero__link
+  align-self flex-start
+  color white
+  display block
+  text-decoration underline
+  &+&
+    margin-top 10px
+  &:hover
+    text-decoration none
+  &--with-icon
+    display flex
+    align-items center
+    text-decoration none
+    &:hover
+      text-decoration underline
+    svg
+      width 33px
+      height 33px
+      fill white
+      margin-right 10px
+    &+&
+      margin-top 40px
+  @media (max-width breakpoint-md)
+    &--with-icon
+      &+&
+        margin-top 20px

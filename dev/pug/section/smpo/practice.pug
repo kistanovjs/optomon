@@ -1,0 +1,9 @@
+section.smpo-practice.inner-section
+  .container
+    .inner-section__wrap
+      h3.inner-section__title.smpo-practice__title= smpo.practice.title
+      .smpo-practice__list.inner-section__list
+        each item in smpo.practice.list
+          .smpo-practice__item.inner-section__item
+            +icon(item["icon"])
+            span.text= item.text

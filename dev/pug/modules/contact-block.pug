@@ -1,0 +1,6 @@
+.contact-block
+  p.text.contact-block__address 129515, Москва,<br>ул. Академика Королёва, дом 6, корпус 1
+  each item in global.footer.contacts.links
+    a.text.contact-block__link(href=item["href"])
+      +icon(item["icon"])
+      span= item["text"]

@@ -1,0 +1,48 @@
+.form
+  width 100%
+
+.form__title
+  margin-bottom 20px
+  color base-color
+  font-size 14px
+  font-weight 300
+
+.form__group
+  position relative
+  &+&
+    margin-top 15px
+
+.form__input
+.form__textarea
+  border 1px solid mercury
+  height 35px
+  padding 0 20px
+  cursor pointer
+  display block
+  width 100%
+  &:focus
+    border-color #000
+    & + .form__label
+      opacity 0
+
+.form__textarea
+  height 190px
+  padding 20px
+  &::placeholder
+    color base-color
+
+.form__label
+  color base-color
+  font-size 14px
+  font-weight 300
+  position absolute
+  left 20px
+  top 11px
+  transition all .2s
+  &.hide
+    opacity 0
+
+.form__actions
+  margin-top 15px
+  display flex
+  justify-content flex-end
